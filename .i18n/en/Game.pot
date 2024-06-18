@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue Jun 18 22:13:07 2024\n"
+"POT-Creation-Date: Tue Jun 18 22:29:45 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -20,38 +20,57 @@ msgstr ""
 msgid "intermediate goal solved! 🎉"
 msgstr ""
 
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "Hello World"
+#: Game.Levels.CatWorld.L01_HelloWorld
+msgid "Hello Category Theory World!"
 msgstr ""
 
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "This text is shown as first message when the level is played.\n"
-"You can insert hints in the proof below. They will appear in this side panel\n"
-"depending on the proof a user provides."
+#: Game.Levels.CatWorld.L01_HelloWorld
+msgid "First we start out with some easy lemmas to get us warmed up.\n"
+"\n"
+"If $$f : X ⟶ Y$$ and $$g : X ⟶ Y$$ are morphisms such that $$f = g$$, then $$f ≫ h = g ≫ h$$."
 msgstr ""
 
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "You can either start using `«{h}»` or `«{g}»`."
+#: Game.Levels.CatWorld.L01_HelloWorld
+msgid "You can easily solve this using `«{w}»`."
 msgstr ""
 
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "You should use `«{h}»` now."
-msgstr ""
-
-#: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "You should use `«{g}»` now."
-msgstr ""
-
-#: Game.Levels.DemoWorld.L01_HelloWorld
+#: Game.Levels.CatWorld.L01_HelloWorld
 msgid "This last message appears if the level is solved."
 msgstr ""
 
-#: Game.Levels.DemoWorld
-msgid "Demo World"
+#: Game.Levels.CatWorld
+msgid "Cat World"
 msgstr ""
 
-#: Game.Levels.DemoWorld
-msgid "This introduction is shown before one enters level 1 of the demo world. Use markdown."
+#: Game.Levels.CatWorld
+msgid "Let's learn some category theory!\n"
+"\n"
+"## Definition of category\n"
+"\n"
+"A category `C` consists of\n"
+"  * a collection of objects `X, Y, Z, ...`\n"
+"  * a collection of morphisms `f, g, h, ...`\n"
+"so that:\n"
+"  * each morphism has specified domain and codomain objects;\n"
+"    `f : X ⟶ Y` signifies that `f` is a morphism with\n"
+"    domain `X` and codomain `Y`\n"
+"  * each object has a designated identity morphism `𝟙 X : X ⟶ X`\n"
+"  * for any pair of morphisms `f, g` with the codomain of `f` equal\n"
+"    to the domain of `g`,the exists a specified composite morphism\n"
+"    `f ≫ g` whose domain is that of `f` and codomain that of `g`,\n"
+"    i.e. `f : X ⟶ Y, g : Y ⟶ Z` then `f ≫ g : X ⟶ Z`\n"
+"This data is subject to the following axioms:\n"
+"  * For any `f : X ⟶ Y`,\n"
+"  -/\n"
+"  /- Axiom :\n"
+"    f ≫ 𝟙 Y = f-/\n"
+"  /- Axiom:\n"
+"    𝟙 X ≫ f = f-/\n"
+"\n"
+"  /-* For any composable triple of morphisms `f, g, h`, we have associativity\n"
+"  `f ≫ (g ≫ h) = (f ≫ g) ≫ h`-/\n"
+"  /- Axiom:\n"
+"    f ≫ (g ≫ h) = (f ≫ g) ≫ h-/"
 msgstr ""
 
 #: Game
