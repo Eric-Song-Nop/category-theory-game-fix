@@ -1,4 +1,6 @@
 import Game.Levels.CatWorld.L01_HelloWorld
+import Game.Levels.CatWorld.L02_Simple2
+import Game.Levels.CatWorld.L03_Specialize
 
 World "CatWorld"
 Title "Cat World"
