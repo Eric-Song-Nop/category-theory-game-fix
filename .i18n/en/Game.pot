@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Wed Jun 19 03:22:22 2024\n"
+"POT-Creation-Date: Wed Jun 19 18:14:22 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -61,13 +61,19 @@ msgid "Easy right?"
 msgstr ""
 
 #: Game.Levels.CatWorld.L03_Specialize
-msgid "The `specialize` tactic"
+msgid "right identity"
 msgstr ""
 
 #: Game.Levels.CatWorld.L03_Specialize
 msgid "Given two morphisms composing with the same morphism are equal, we can conclude that they are equal.\n"
 "\n"
-"If $$f : X ⟶ Y$$ and $$g : X ⟶ Y$$ are morphisms such that $$f ∘ h = g ∘ h$$, then $$f = g$$."
+"If $$f : X ⟶ Y$$ and $$g : X ⟶ Y$$ are morphisms such that $$f ∘ h = g ∘ h$$, then $$f = g$$.\n"
+"\n"
+"We will make use of the identity axiom: $f ≫ 𝟙 Y = f$ to prove this."
+msgstr ""
+
+#: Game.Levels.CatWorld.L03_Specialize
+msgid "Given two morphisms composing with the same morphism are equal, we can conclude that they are equal."
 msgstr ""
 
 #: Game.Levels.CatWorld.L03_Specialize
@@ -93,6 +99,99 @@ msgstr ""
 #: Game.Levels.CatWorld.L03_Specialize
 msgid "A morphism `f` is equal to `f` composed with the identity morphism.\n"
 "`f = f ≫ 𝟙 X`"
+msgstr ""
+
+#: Game.Levels.CatWorld.L04_Specialize2
+msgid "left identity"
+msgstr ""
+
+#: Game.Levels.CatWorld.L04_Specialize2
+msgid "Given two morphisms composing with the same morphism are equal, we can conclude that they are equal.\n"
+"\n"
+"If $$f : Y ⟶ Z$$ and $$g : Y ⟶ Z$$ are morphisms such that $$h ≫ f = h ≫ g$$, then $$f = g$$.\n"
+"\n"
+"This lemma is similar to the previous one, but the morphisms are in the reversed order.\n"
+"We will make use of the identity axiom: $𝟙 ≫ X = f$ to prove this."
+msgstr ""
+
+#: Game.Levels.CatWorld.L04_Specialize2
+msgid "Given two morphisms composed with the same morphism are equal, we can conclude that they are equal."
+msgstr ""
+
+#: Game.Levels.CatWorld.L04_Specialize2
+msgid "Consider the special case when `h` is the identity morphism, you can write an identity morphism on Category `«{Y}»` as `𝟙 Y`."
+msgstr ""
+
+#: Game.Levels.CatWorld.L04_Specialize2
+msgid "Try to simplify the `id` compose `f` part"
+msgstr ""
+
+#: Game.Levels.CatWorld.L04_Specialize2
+msgid "We call this equal of left equal lemma."
+msgstr ""
+
+#: Game.Levels.CatWorld.L04_Specialize2
+msgid "use the `specialize` tactic to give a specify case for proof!"
+msgstr ""
+
+#: Game.Levels.CatWorld.L04_Specialize2
+msgid "Apply the exactly same condition or theorem to finish the proof."
+msgstr ""
+
+#: Game.Levels.CatWorld.L04_Specialize2
+msgid "A morphism `f` is equal to identity morphism compose with `f`.\n"
+"This is the left identity law of category theory, reverse of `comp_id`.\n"
+"`f = 𝟙 X ≫ f`"
+msgstr ""
+
+#: Game.Levels.CatWorld.L05_id_comp
+msgid "Only `𝟙` left"
+msgstr ""
+
+#: Game.Levels.CatWorld.L05_id_comp
+msgid "Only `𝟙` compose with `g` gets `g`."
+msgstr ""
+
+#: Game.Levels.CatWorld.L05_id_comp
+msgid "Consider the lemma `eq_of_comp_left_eq` or `eq_of_comp_right_eq` that we have proved in the previous level."
+msgstr ""
+
+#: Game.Levels.CatWorld.L05_id_comp
+msgid ""
+msgstr ""
+
+#: Game.Levels.CatWorld.L05_id_comp
+msgid "We call this `id_of_comp_left_id`"
+msgstr ""
+
+#: Game.Levels.CatWorld.L05_id_comp
+msgid "use the `specialize` tactic to give a specify case for proof!"
+msgstr ""
+
+#: Game.Levels.CatWorld.L05_id_comp
+msgid "Apply the exactly same condition or theorem to finish the proof."
+msgstr ""
+
+#: Game.Levels.CatWorld.L05_id_comp
+msgid "Apply the condition or theorem to goal."
+msgstr ""
+
+#: Game.Levels.CatWorld.L05_id_comp
+msgid "Introduces one or more hypotheses, optionally naming and/or pattern-matching them.\n"
+"  For each hypothesis to be introduced, the remaining main goal's target type must\n"
+"  be a `let` or function type."
+msgstr ""
+
+#: Game.Levels.CatWorld.L05_id_comp
+msgid "[[mathlib_doc]]\n"
+"A morphism `f` is equal to identity morphism compose with `f`.\n"
+"This is the left identity law of category theory, reverse of `comp_id`.\n"
+"`f = 𝟙 X ≫ f`"
+msgstr ""
+
+#: Game.Levels.CatWorld.L05_id_comp
+msgid "[[mathlib_doc]]\n"
+"Given two morphisms composing with the same morphism are equal, we can conclude that they are equal."
 msgstr ""
 
 #: Game.Levels.CatWorld

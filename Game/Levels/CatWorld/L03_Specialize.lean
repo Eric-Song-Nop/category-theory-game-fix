@@ -3,16 +3,23 @@ import Game.Metadata
 World "CatWorld"
 Level 3
 
-Title "The `specialize` tactic"
+Title "right identity"
 
 Introduction " Given two morphisms composing with the same morphism are equal, we can conclude that they are equal.
 
 If $$f : X ⟶ Y$$ and $$g : X ⟶ Y$$ are morphisms such that $$f ∘ h = g ∘ h$$, then $$f = g$$.
+
+We will make use of the identity axiom: $f ≫ 𝟙 Y = f$ to prove this.
 "
 
 open CategoryTheory
 universe v u  -- The order in this declaration matters: v often needs to be explicitly specified while u often can be omitted
 variable (C : Type u) [Category.{v} C]
+
+/--
+Given two morphisms composing with the same morphism are equal, we can conclude that they are equal.
+-/
+TheoremDoc CategoryTheory.eq_of_comp_left_eq as "eq_of_comp_left_eq" in "Comp"
 
 Statement (X Y : C) {f g : X ⟶ Y} (w : ∀ {Z : C} (h : Y ⟶ Z), f ≫ h = g ≫ h) : f = g := by
   Hint "Consider the special case when `h` is the identity morphism, you can write an identity morphism on Category `{Y}` as `𝟙 Y`."
@@ -43,5 +50,3 @@ A morphism `f` is equal to `f` composed with the identity morphism.
 -/
 DefinitionDoc Category.comp_id as "Category.comp_id"
 NewDefinition Category.comp_id
-
-

@@ -1,6 +1,8 @@
 import Game.Levels.CatWorld.L01_HelloWorld
 import Game.Levels.CatWorld.L02_Simple2
 import Game.Levels.CatWorld.L03_Specialize
+import Game.Levels.CatWorld.L04_Specialize2
+import Game.Levels.CatWorld.L05_id_comp
 
 World "CatWorld"
 Title "Cat World"
